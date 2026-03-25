@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Device Info App</title>
+
+    <style>
+        body{
+        font-family: Arial;
+        text-align:center;
+        margin-top:60px;
+        background:#f2f2f2;
+        }
+
+        button{
+        padding:12px 20px;
+        margin:8px;
+        background:#007AFF;
+        color:white;
+        border:none;
+        border-radius:6px;
+        }
+
+        img{
+        width:220px;
+        margin-top:15px;
+        display:none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h2>Battery Info</h2>
+
+<button onclick="getBattery()">Get Battery</button>
+<p id="batteryLevel"></p>
+<p id="batteryState"></p>
+
+<h2>Permissions</h2>
+<button onclick="allowCamera()">Allow Camera</button>
+<button onclick="allowMic()">Allow Mic</button>
+
+<h2>Camera</h2>
+<button onclick="openCamera()">Open Camera</button>
+<img id="preview"/>
+
+<h2>Microphone</h2>
+<button onclick="startMic()">Start Mic</button>
+<button onclick="stopMic()">Stop Mic</button>
+<button onclick="playAudio()">Play Audio</button>
+
+<p id="output"></p>
+
+<script src="capacitor.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
